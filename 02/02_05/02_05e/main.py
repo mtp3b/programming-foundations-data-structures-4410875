@@ -5,7 +5,7 @@ seating_chart = [
     ["Chad", "April", "Matt", "Thomas", "Penny"]
 ]
 
-# print(seating_chart[2][1])
+print(seating_chart[2][1])
 
 for i, row in enumerate(seating_chart):
     for j, student_name in enumerate(row):

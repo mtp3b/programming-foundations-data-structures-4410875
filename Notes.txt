@@ -1,1 +1,32 @@
-test
+DATA STRUCTURES:
+ - containers that allow us to combine pieces of data into a single structure
+ - help us connect and group our data 
+
+
+BUILT-IN DATA STRUCTURES:
+List[,,]
+Tuple(,,)
+Dictionary{:,:}
+Set{,,} - store a collection of unique items in an unordered manner
+Deque[,,] - double-ended que; allow you to insert and remove data from both ends; similar to list
+
+
+BIG-O NOTATION:
+ - describes the complexity of an algorithm, independently of input; tells you how efficient an operation is
+ - used to decide which data structure to use based on our needs
+
+Constant Time Complexity or O(1) - time required by the algorithm is not dependent on the inputs size
+
+Linear Time Complexity or O(n) - time required by the algorithm grows linearily with the size of input
+
+Quadratic Time Complexity or O(n^2) - time required is proportional to square of the items in the collection
+
+
+ARRAY:
+ - like a row of seats in a movie theater
+ - each seat can have data or be empty
+ - counting starts at 0 (zero-based indexing)
+ - a collection of elements where each item is identified with an index or key
+ - python does not have a data structure called array, but has array-like data structures like list or tuple
+
+

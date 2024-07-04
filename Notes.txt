@@ -25,8 +25,112 @@ Quadratic Time Complexity or O(n^2) - time required is proportional to square of
 ARRAY:
  - like a row of seats in a movie theater
  - each seat can have data or be empty
- - counting starts at 0 (zero-based indexing)
+ - counting starts at 0 (zero-based indexing). negative index starts from the end and starts at -1
  - a collection of elements where each item is identified with an index or key
  - python does not have a data structure called array, but has array-like data structures like list or tuple
 
 
+Multi-dimentional List/Nested List:
+ - use multiple indeces to access an element in the inner list.
+    ex. print(sample[2][1]) >> prints the second item[1] in the third inner list[2]
+ - built-in enumerate function loops through the list and gives access to a counter in each item
+
+Tuples:
+ - immutable. values accessed through indeces, same as lists
+ - can be used to return multiple values from a function
+
+
+Searching for an Item in Array-like Structure:
+ - you can use a for loop to iterate through the array/list and check each item if it matches the value you are searching for
+    - this is called linear search or sequential search
+    - inelegant, brute force method
+    - slow, specially if the array/list is very long
+ - index method returns the index of the first occurence of the element in the array/list. you can then use the returned index to get the value of the item
+    - useful only if the array/list is already sorted
+    - also a linear search
+
+
+Sorting Array-like Structures:
+ - you can used built-in 'sorted' function
+ - for sorting a list of tuples, you can used key=lambda to decide which index in the tuples should be used for sorting
+
+
+NOTE: sometimes, creating your own custom algorithm for searching that is tailored to your needs can result to less time complexity
+
+
+NOTE: arrays are good to use when working with sequential data but are not optimized for speed
+
+
+DICTIONARIES:
+ - key-value pairs
+ - keys can be any type but are unique within the dictionary. they serve as the index when searching through the dictionary
+ - value can be any type
+ - .keys() function can be used to return the keys
+ - .items() fuction can be used to return the keys and the values at the same time
+ - faster searching operations but take up more space
+ - good for storing mapping relationships
+ - does not order keys by default
+ - keys in dictionaries must be immutable
+
+
+Modifying Dictionaries:
+ - use the keys as index and use = to assign a new value. same syntax for adding a new key-value pair
+ - use 'del' to delete an item without the ability to retrieve
+ - use .pop() function to delete but still be able to retrive
+    - store the removed value in a variable
+    - you can add a second argument as a default output if the key to be removed does not exist
+
+
+Dictionary Comprehensions: (there are also list comprehensions)
+ - provides a concise way to create new dictionaries from an iterable object
+ - ex. return {key: value for key, value in user_pref.items() if value is not None }
+               1. key: >>> sets the key
+               2. value for key >>> sets the value
+               3. in user_pref.items() >>> iterates through input dictionary
+               4. if value is not None >>> condition
+
+
+SETS:
+ - a collection of unique(no duplicates), unordered(no index/keys) items
+ - a way of grouping things with a common property
+ - check for compatibility, very fast if all you care about is membership checking
+ - similar to dictionaries except the key is the value
+ - almost never used for data retrieval
+ - ex. primary_colors = set(["red", "blue", "yellow"])
+ - ex. set_A = {10, 20, 30, 40, 50}
+ - if you add a value that is already in the set, you will not get an error but the set remains unchanged
+
+Set Operations:
+ - .union() function combines sets into a new set
+ - .intersection() function allows you to see what entries are in both sets
+ - .difference() function subtracts the contents of the passed in set from the first set
+ - .symmetric_difference() function returns all items that are unique in both sets
+
+frozenset:
+ - introduced in python 3.4 to create an immutable set
+
+
+QUEUES:
+ - a series of ordered objects, but the way we add, remove and access items are different from the way we do in lists
+ - designed to add elements at the end and remove elements at the beginning (first-in, first-out)
+ - Enqueue - add item to end
+ - Dequeue - remove item from front
+ - peek() - see the first item in the queue
+ - often used in programs where data is processed sequentially
+ - not optimized for pulling data at the middle consistently
+
+
+Deque:
+ - Double-ended Queue
+ - allow storage and manipulation of data as a queue in python
+ - import from collections module
+ - .append() function to Enqueue
+ - .popleft() function to Dequeue
+
+
+STACKS:
+ - similar to queues but with last-in, first-out
+ - Push - adding items to the stack 
+ - Pop - remove items from the stack
+ - to retrieve data from the middle, we must pop off all items on top of it
+ 

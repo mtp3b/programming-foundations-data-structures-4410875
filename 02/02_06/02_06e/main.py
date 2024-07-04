@@ -12,4 +12,5 @@ def calculate_square_properties(side_length):
 
 result = calculate_square_properties(5)
 print("Area: ", result[0])
-print("Perimeter ", result[1])
+print("Perimeter: ", result[1])
+#print(f'Area: {result[0]}')

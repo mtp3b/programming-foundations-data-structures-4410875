@@ -9,6 +9,6 @@ def search(item, listy):
             return True
     return False
 
-print(search(ITEM, my_list))
+#print(search(ITEM, my_list))
 
 ITEM_INDEX = my_list.index(ITEM)

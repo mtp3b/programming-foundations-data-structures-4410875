@@ -21,6 +21,7 @@ def print_binary_numbers(n):
         print(binary)
         queue.append(binary * 10)
         queue.append(binary * 10 + 1)
+        
 
 print_binary_numbers(6)
 print()
@@ -30,4 +31,3 @@ print_binary_numbers(0)
 print()
 print_binary_numbers(2)
 print()
-print_binary_numbers(10)

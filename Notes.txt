@@ -133,4 +133,15 @@ STACKS:
  - Push - adding items to the stack 
  - Pop - remove items from the stack
  - to retrieve data from the middle, we must pop off all items on top of it
+ - great for programs where you need to keep track of state
+ - not optimized for pulling data at the middle consistently
  
+
+Use List as a Stack:
+ - use .pop() to remove top of stack or [-1] index to access top of the stack
+ - "if not" to check if stack is empty
+ - len() to know the size of the stack
+
+
+Use Deque as a Stack:
+ - use .pop() to remove top of stack or [-1] index to access top of the stack
